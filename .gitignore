@@ -1,0 +1,7 @@
+weights/
+*.safetensors
+__pycache__/
+*.py[cod]
+output/
+*.tar
+*.tar.gz

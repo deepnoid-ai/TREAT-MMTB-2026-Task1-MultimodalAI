@@ -1,0 +1,9 @@
+*
+!Dockerfile
+!requirements.txt
+!predict.py
+!config.json
+!weights/
+!weights/model_*.safetensors
+!LICENSE-DINOv3.md
+!README.md

@@ -1,0 +1,87 @@
+{
+  "model_type": "treat-mmtb-2026",
+  "task": 1,
+  "mode": "seg",
+  "seg_spec": {
+    "infer_size": 1024,
+    "tower": {
+      "model_type": "dinov3_convnext",
+      "depths": [
+        3,
+        3,
+        27,
+        3
+      ],
+      "hidden_sizes": [
+        192,
+        384,
+        768,
+        1536
+      ],
+      "hidden_act": "gelu",
+      "drop_path_rate": 0.0,
+      "image_size": 1024,
+      "initializer_range": 0.02,
+      "layer_norm_eps": 1e-06,
+      "layer_scale_init_value": 1e-06,
+      "num_channels": 3
+    },
+    "decoder": {
+      "decoder_channels": [
+        512,
+        256,
+        128,
+        64
+      ],
+      "out_channels": 1,
+      "target_mask_size": 1024,
+      "ppm_pool_sizes": [
+        1,
+        2,
+        3,
+        6
+      ]
+    },
+    "op": {
+      "threshold": 0.79,
+      "detection_tau": 0.7,
+      "fallback_fraction": 0.01
+    }
+  },
+  "cls_spec": {
+    "infer_size": 1024,
+    "patch_start": 5,
+    "dim": 1024,
+    "tower": {
+      "model_type": "dinov3_vit",
+      "hidden_size": 1024,
+      "intermediate_size": 4096,
+      "num_hidden_layers": 24,
+      "num_attention_heads": 16,
+      "num_register_tokens": 4,
+      "patch_size": 16,
+      "image_size": 1024,
+      "hidden_act": "gelu",
+      "layer_norm_eps": 1e-05,
+      "layerscale_value": 1.0,
+      "drop_path_rate": 0.0,
+      "num_channels": 3
+    },
+    "pool": {
+      "num_heads": 8
+    },
+    "head": {
+      "hidden_dim": 512,
+      "num_classes": 1,
+      "dropout": 0.1
+    }
+  },
+  "architectures": [
+    "MMTBModel"
+  ],
+  "auto_map": {
+    "AutoConfig": "configuration_mmtb.MMTBConfig",
+    "AutoModel": "modeling_mmtb.MMTBModel"
+  },
+  "transformers_version": "4.56.1"
+}

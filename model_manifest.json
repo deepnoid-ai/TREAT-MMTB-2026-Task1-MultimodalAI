@@ -1,0 +1,45 @@
+{
+  "task": "task1",
+  "models": [
+    {
+      "name": "model_0",
+      "file": "weights/model_0.safetensors",
+      "role": "classification",
+      "bytes": 1231473340,
+      "sha256": "2c9272eca956c832c61894167ce7932c01f201c41d7d9ab7a466e5939dd32add",
+      "removed_training_tensors": 0
+    },
+    {
+      "name": "model_1",
+      "file": "weights/model_1.safetensors",
+      "role": "segmentation",
+      "bytes": 869930300,
+      "sha256": "4f94f6f1a1bdef2d9f5e8123823b2b771a7883d83fa394111c6d9236215a9a67",
+      "removed_training_tensors": 10
+    },
+    {
+      "name": "model_2",
+      "file": "weights/model_2.safetensors",
+      "role": "segmentation",
+      "bytes": 869930300,
+      "sha256": "93907d6d6063b609735fd5469423b90f8a9ef3ba20ebc95b67f593b087a8c4f3",
+      "removed_training_tensors": 10
+    },
+    {
+      "name": "model_3",
+      "file": "weights/model_3.safetensors",
+      "role": "segmentation",
+      "bytes": 869930300,
+      "sha256": "240783b002c940842bda8a4e9631c09b5ba7153b8e6d241f84a6b2732a824436",
+      "removed_training_tensors": 10
+    },
+    {
+      "name": "model_4",
+      "file": "weights/model_4.safetensors",
+      "role": "segmentation",
+      "bytes": 869930300,
+      "sha256": "e224a24e2a210ce13274f287d0bcf65f74b9108c25b79635d52344d48e409ae8",
+      "removed_training_tensors": 10
+    }
+  ]
+}

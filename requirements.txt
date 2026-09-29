@@ -1,0 +1,7 @@
+transformers==4.56.1
+safetensors==0.8.0
+numpy==1.26.4
+opencv-python-headless==4.10.0.84
+pydicom==3.0.2
+python-gdcm>=3.0.10
+SimpleITK==2.5.5
