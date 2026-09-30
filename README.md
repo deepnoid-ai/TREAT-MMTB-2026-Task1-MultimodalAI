@@ -1,8 +1,10 @@
 # MultimodalAI — TREAT-MMTB 2026 Task 1
 
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-FFD21E)](https://huggingface.co/Deepnoid/TREAT-MMTB-2026-Task1-MultimodalAI) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github)](https://github.com/deepnoid-ai/TREAT-MMTB-2026-Task1-MultimodalAI) [![Leaderboard](https://img.shields.io/badge/Leaderboard-Rank%203-2EA44F)](https://github.com/mi2rl-challenge/treat-mmtb.miccai2026/blob/main/leader_board_point.json) [![TREAT-MMTB 2026](https://img.shields.io/badge/MICCAI%202026-TREAT--MMTB-1F6FEB)](https://treat-mmtb.mi2rl.co/)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-FFD21E)](https://huggingface.co/Deepnoid/TREAT-MMTB-2026-Task1-MultimodalAI) [![GitHub](https://img.shields.io/badge/GitHub-Code-181717?logo=github)](https://github.com/deepnoid-ai/TREAT-MMTB-2026-Task1-MultimodalAI) [![Paper](https://img.shields.io/badge/Paper-MICCAI%202026-B31B1B)](https://papers.miccai.org/miccai-2026-sat/paper/TREAT_MMTB_004.pdf) [![Leaderboard](https://img.shields.io/badge/Leaderboard-Rank%203-2EA44F)](https://github.com/mi2rl-challenge/treat-mmtb.miccai2026/blob/main/leader_board_point.json) [![TREAT-MMTB 2026](https://img.shields.io/badge/MICCAI%202026-TREAT--MMTB-1F6FEB)](https://treat-mmtb.mi2rl.co/)
 
 Cavity detection and segmentation from chest X-ray DICOMs for [TREAT-MMTB 2026](https://treat-mmtb.mi2rl.co/), with optional classification-only inference.
+
+Paper: [Detection-Gated Cavity Segmentation on Chest X-rays with Vision–Language Pretraining](https://papers.miccai.org/miccai-2026-sat/paper/TREAT_MMTB_004.pdf), MICCAI 2026 Workshops and Challenges (TREAT-MMTB).
 
 ## Challenge result
 
@@ -94,3 +96,18 @@ Vision-language pretraining followed [GLINT](https://arxiv.org/abs/2606.03180) (
 This work was supported by the Technology Innovation Program (RS-2025-02221011, Development of Medical-Specialized Multimodal Hyperscale Generative AI Technology for Global Integration) funded by the Ministry of Trade Industry & Energy (MOTIE, South Korea), and by the “Advanced GPU Utilization Support Program” funded by the Government of the Republic of Korea (Ministry of Science and ICT).
 
 Data were obtained from the [TB Portals](https://tbportals.niaid.nih.gov), which is an open-access TB data resource supported by the National Institute of Allergy and Infectious Diseases (NIAID) Office of Cyber Infrastructure and Computational Biology (OCICB) in Bethesda, MD. These data were collected and submitted by members of the [TB Portals Consortium](https://tbportals.niaid.nih.gov/Partners). Investigators and other data contributors that originally submitted the data to the TB Portals did not participate in the design or analysis of this study (Rosenthal et al., 2017).
+
+## Citation
+
+If you use this code or these weights, please cite:
+
+```bibtex
+@InProceedings{LeeSeo_DetectionGated_MICCAISAT2026,
+    author = {Lee, Seongeun AND Yun, Hannah AND Jeong, Taejin AND Jeon, Mingyeong AND Park, Junhyun AND Kim, Hyunwoong AND Park, Jonggwon},
+    title = {{Detection-Gated Cavity Segmentation on Chest X-rays with Vision–Language Pretraining}},
+    booktitle = {Medical Image Computing and Computer Assisted Intervention -- MICCAI 2026 Workshops and Challenges},
+    year = {2026},
+    publisher = {Springer Nature Switzerland},
+    volume = {LNCS 17265}
+}
+```
